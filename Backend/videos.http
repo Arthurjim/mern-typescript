@@ -1,0 +1,29 @@
+@api = http://localhost:4000
+
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/609c8316d504d802e6dbe031
+
+###
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+  "url":"https://www.youtube.com/watch?v=_RZ-T6TxP7w&t=3771s&ab_channel=FaztFaztVerificada",
+  "title": "MERN STACK",
+  "description":"Mongodb, express, react, node con TypeScript"
+
+}
+
+###
+DELETE {{api}}/videos/609e11be21442d0f581d6269
+
+
+###
+PUT {{api}}/videos/609c8316d504d802e6dbe031
+Content-Type: application/json
+
+{
+  "title": "React MERN con Arturo Jimenez"
+}
